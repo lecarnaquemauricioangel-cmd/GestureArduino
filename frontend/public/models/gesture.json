@@ -1,0 +1,23 @@
+{
+  "names": {
+    "0": "mano_abierta",
+    "1": "puno_cerrado"
+  },
+  "imgsz": 640,
+  "input_range": "0..1 RGB, letterbox",
+  "nms_included": false,
+  "opset": 12,
+  "input_name": "images",
+  "input_shape": [
+    1,
+    3,
+    640,
+    640
+  ],
+  "output_name": "output0",
+  "output_shape": [
+    1,
+    6,
+    8400
+  ]
+}

@@ -1,0 +1,14 @@
+# Python 3.10 – 3.13 (onnx 1.18 trae wheels para 3.13 en Windows; 1.17 no)
+#
+# PyTorch lo instala ultralytics desde PyPI (CPU en Windows). Para usar la GPU
+# NVIDIA instálalo ANTES de este archivo:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu126
+ultralytics==8.3.253   # >=8.3.2xx: la 8.3.145 exigía onnx<1.18 al exportar (sin wheel en py3.13 → se colgaba compilando)
+torch>=2.2,<2.9
+torchvision>=0.17,<0.24
+numpy>=1.23,<2.3
+onnx==1.18.0
+onnxslim>=0.1.71       # usado por export(simplify=True)
+onnxruntime==1.20.1    # misma versión que onnxruntime-web del frontend
+PyYAML>=6.0
+Pillow>=9.0
